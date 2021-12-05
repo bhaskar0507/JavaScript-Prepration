@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id = "click">Click Me</button>
+    
+</body>
+</html>
+
+<script>
+    const debouncer=(func,delay)=>{
+   let debouncing;
+
+   return function(){
+    debouncing && clearTimeout(debouncing);
+    debouncing = setTimeout(()=>func.apply(this,arguments),delay);
+   }
+ }
+
+    const makeApiCall=()=>{
+        console.log("api call in progress");
+    }
+
+var button = document.getElementById("click");
+button.addEventListener("click",debouncer(makeApiCall,2000));
+
+
+
+
+
+</script>
