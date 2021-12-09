@@ -35,5 +35,11 @@ var foo = {
 
  var a = new String("hello there");
  a.bhaskar= 13;
- console.log(a);
+ //console.log(a);
+
+ var names = ["the","birth","day","boy"];
+
+ names.splice(2,1);
+
+ console.log(names);
 
