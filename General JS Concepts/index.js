@@ -41,5 +41,32 @@ var foo = {
 
  names.splice(2,1);
 
- console.log(names);
+ //console.log(names);
+
+ var myName = "bhaskar rai";
+
+ const printName = ()=>{
+     console.log(myName);
+     var myName = "rai bhaskar";
+ }
+ //printName();
+
+
+ var array1 = [12,4,6,19];
+ var array2 = [12,19,6,4];
+
+ function checkData(array1,array2){
+  
+var result = array1.length==array2.length && array1.every((elem)=>{
+    if(array2.indexOf(elem)>-1){
+return(elem = array2[array2.indexOf(elem)]);
+    }
+
+});
+return result;
+ }
+ console.log(checkData(array1,array2));
+ 
+
+
 
