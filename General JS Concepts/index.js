@@ -51,7 +51,7 @@ var foo = {
  }
  //printName();
 
-
+//Checking the elements of the array in two diffrent arrays..
  var array1 = [12,4,6,19];
  var array2 = [12,19,6,4];
 
@@ -65,8 +65,36 @@ return(elem = array2[array2.indexOf(elem)]);
 });
 return result;
  }
- console.log(checkData(array1,array2));
+ //console.log(checkData(array1,array2));
  
 
+// Reversing an array.
+
+function reverseInt(j){
+    var str = j.toString().split("").reverse().join("");
+if(str.endsWith("-")){
+    str = "-"+str;
+    return (parseInt(str));
+}
+else{
+    return parseInt(str);
+}
+}
+//console.log(reverseInt(123));
 
 
+
+var ternary = 10;
+
+var output = (ternary==10) ? true : false;
+//console.log(output);
+
+function factorial(num){
+    if(num == 1){
+        return 1;
+    }
+    else{
+        return num*factorial(num-1);
+    }
+}
+console.log(factorial(5));
