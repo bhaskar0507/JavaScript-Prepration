@@ -16,5 +16,6 @@ function bhaskarsFilter(arr,myFilterFunc){
 
 var values = [1,2,3,4,5,6,7,8];
 
-var output = bhaskarsFilter(values,(val)=>val%2!==0);
-console.log(output);
+ var output = bhaskarsFilter(values,(val)=>val%2!==0);
+ console.log(output);
+

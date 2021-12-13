@@ -3,7 +3,7 @@ var data = [1, 2, 3, [22, 33, [55, 6, 8]], 23, 46];
 
 var g_array = [];
 function flatArray(data){
-
+    
     if(data.length==0){
         return;
     }
@@ -17,25 +17,10 @@ function flatArray(data){
             }
         }
     }
+    return g_array;
 }
-flatArray(data);
-console.log(g_array);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(flatArray(data,[]));
 
 
 // function flatAnAray(data) {

@@ -97,4 +97,36 @@ function factorial(num){
         return num*factorial(num-1);
     }
 }
-console.log(factorial(5));
+//console.log(factorial(5));
+
+var arr = [1,2,3,4];
+
+//console.log(arr.__proto__);
+
+var obj = {
+    a:2,
+    b:6
+};
+
+function demo(a,b){
+var sum = a+b;
+}
+
+
+Function.prototype.bhaskarsLength = function(){
+    console.log("hello my people");
+}
+
+//obj.bhaskarsLength();
+
+//demo.bhaskarsLength();
+
+
+message: 'Hello i am global!'
+const object = {
+   getMessage() {
+      const message = 'Hello, Earth!';
+      return this.message;
+    }
+  };
+  console.log(object.getMessage());
