@@ -67,7 +67,20 @@ body {
   border: none;
   /* border-radius: 20px; */
 }
-#todos > .todo_input_container i{
+
+#todos > .todo_input_container >.deleteBtn{
+  position:absolute;
+  /* right:0; */
+  top:50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height:40px;
+  line-height: 40px;
+  cursor: pointer;
+  right: 40px;
+  background-color:rgb(233,153,61);
+}
+#todos > .todo_input_container >.add-item {
     position:absolute;
     right:0;
     top:50%;
@@ -80,8 +93,4 @@ body {
    
 
 
-}
-#todos > .todo_input_container i:nth-child(2){
-    right: 40px;
-    background-color:rgb(233,153,61);
 }
