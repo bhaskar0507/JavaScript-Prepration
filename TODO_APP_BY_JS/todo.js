@@ -59,7 +59,12 @@ buttonDiv.appendChild(completeButton);
 buttonDiv.appendChild(editButton);
 buttonDiv.appendChild(trashButton);
 
-console.log(ulTag);
+//Appending all the elements on the DOM main DIV --------------------------------
+
+main_todo_container.appendChild(ulTag);
+
+// When the input button clicked, clear the input box-----
+ input.value = ""; 
 
 })
 
