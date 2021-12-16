@@ -129,4 +129,19 @@ const object = {
       return this.message;
     }
   };
-  console.log(object.getMessage());
+ // console.log(object.getMessage());
+
+
+  var promise = new Promise((res,rej)=>{
+  setTimeout(()=>{
+
+rej("not got the response");
+  },1000)
+  });
+
+  promise.then((res)=>{
+console.log(res);
+  })
+  promise.catch((err)=>{
+console.log(err);
+  })
