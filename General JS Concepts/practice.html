@@ -44,6 +44,27 @@ this.window = greet;
 //console.log(window.greet);
 
 
+// Fetchng Web Api----------------------------------------------------------------
+
+function fetchApi(Index){
+  const data = fetch('https://api.covid19api.com/summary')
+  data.then((apiData)=>{
+// console.log(apiData);
+return (apiData.json());
+ }).then((jsonData)=>{
+// console.log(jsonData.Countries[]);
+const ourCountry = jsonData.Countries[`${Index}`]
+ console.log(ourCountry);
+
+ })
+ .catch((err)=>{
+     console.log(err);
+ });
+
+}
+ fetchApi(100);
+ 
+
 
 
 
